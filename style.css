@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+html,body {
+    height: 100%;
+    background: linear-gradient(135deg, #56667A, #E5EFF0);
+}
 header{
     position: relative;
     width: 100%;
@@ -21,11 +25,19 @@ header{
 }
 .menu{
     position: absolute;
+    display: flex;
+    justify-content: center;
     top: 60%;
     width:100%;
     padding: 5px;
-    text-align: center;
-    border: 1px solid black;  
+    text-align: center; 
+}
+.menu-buttons{
+    width: max-content;
+    padding: 5px;
+    border: 1px solid #212529;
+    border-radius: 10px;
+    background-color: #e5eff09d;
 }
 #cv{
     font-weight: 600;
@@ -60,4 +72,49 @@ footer{
 #copyright{
     font-size: 17px;
     font-weight:600 ;
+}
+#instagram{
+    background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    margin: 5px;
+    border-radius: 15px;
+    color: #e5eff0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#facebook{
+    background: linear-gradient(135deg, #3b5998, #8b9dc3);
+    margin: 5px;
+    border-radius: 15px;
+    color: #e5eff0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#youtube{
+    background: linear-gradient(135deg, #ff0000, #580b0b);
+    margin: 5px;
+    border-radius: 15px;
+    color: #e5eff0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#ico{
+    width: 50px;
+    height: 50px;
+}
+.ico{
+    border: 0px;
+    margin: 15px;
+}
+#pfp{
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    border: 2px solid #212529;
+    border-radius: 40px;
 }
