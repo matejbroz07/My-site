@@ -147,3 +147,23 @@ footer{
     border-radius :15px ;
     align-items: center;
 }
+.project-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.project-link:hover {
+    opacity: 0.8;
+}
+
+.project-image {
+    width: 80px; /* Malý obrázek, můžeš upravit velikost */
+    height: auto;
+    margin-right: 20px; /* Mezera mezi obrázkem a textem */
+}
+
+.project-date {
+    font-size: 0.8rem; /* Menší písmo pro datum */
+    color: #666; /* Méně výrazná barva pro datum */
+}
