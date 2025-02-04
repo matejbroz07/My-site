@@ -1,90 +1,147 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <title>My Web Site</title>
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
+<!DOCTYPE html>
+<html lang="cs" data-bs-theme="dark">
 
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous"
-        />
-        <link rel="stylesheet" href="./style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative CV</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=Red+Hat+Display:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
 
-    <body>
-        <header>
-                <h1 class="display-1" id="welcome">Welcome</h1>
-                <p class="lead" id="info"><strong>this is my web site</strong></p>
-                <div class="menu">
-                    <div class="menu-buttons">
-                        <a name="" id="menu-button1" class="btn btn-ligth menu-button" href="./index.html" role="button" style="background-color: #212529; color:#E5EFF0;">Home</a>
-                        <a name="" id="menu-button2" class="btn btn-ligth menu-button" href="./projects.html" role="button">Projects</a>
-                        <a name="" id="menu-button3" class="btn btn-ligth menu-button" href="./social.html" role="button">Social</a>
+<body class="py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-lg-4 mb-5">
+                <div class="sticky-top" style="top: 2rem;">
+                    <div class="avatar-wrapper">
+                        <img src="./img/pfp.jpg" class="avatar-img" alt="Avatar">
                     </div>
-                </div>
-        </header>
-        <main>
-            <div class="container text-center">
-                <div class="row gx-2">
-                    <div class="col">
-                        <h1 class="display-2">
-                            Info
-                        </h1>
-                        <p id="cv">
-                            Jako student software developmentu na Resslově v Ústí se soustředím na zdokonalování svých dovedností v C#, HTML, CSS a JavaScriptu s vášní pro kódování a řešení problémů. Každou výzvu v oblasti kódování se snažím přistupovat s precizností, soustředěním a odhodláním dosahovat optimálních řešení. Moje technické schopnosti doplňuje silné zaměření na neustálé učení a rozvoj v oblasti full-stack vývoje.
 
-                            Mimo školu jsem zkušený brankář, přičemž na poli uplatňuji stejnou úroveň soustředění a odhodlání jako při práci v kódovacím editoru. Každý zápas vnímám jako příležitost předvést své dovednosti, s mindsetem zaměřeným na dosažení dokonalosti jak v individuálním výkonu, tak v týmovém úspěchu.
-
-                            Mým cílem je stát se všestranným full-stack vývojářem, který vyniká jak v kódování, tak v leadershipu, a je schopen navigovat složité projekty a neustále poskytovat vysoce kvalitní výsledky.
-                        </p>
-                    </div>
-                    <div class="col" id="photo">
-                            <img src="./img/IMG_2602.png" alt="photo" id="main-photo">
-                    </div>
-                </div>
-                <div class="row gx-2">
-                    <div class="col" id="photo2">
-                            <img src="./img/icon.png" alt="school" id="school-photo">
-                    </div>
-                    <div class="col">
-                        <h1 class="display-2">
-                            Škola
-                        </h1>
-                        <p id="cv">
-                            Na Střední průmyslové škole Ústí nad Labem – Stříbrníky získávám špičkové vzdělání v oblasti technologií a software developmentu. Škola poskytuje prostředí, kde jsou studenti vybaveni znalostmi a dovednostmi potřebnými k excelenci v rychlém světě IT. S důrazem na praktické učení a aplikaci v reálném světě neustále pracujeme na projektech, které nás vedou k tomu, abychom se stali odborníky na kódování, debugování a řešení problémů.
-
-                            Kurikulum pokrývá širokou škálu technologií, od C# po JavaScript, což nás připravuje na to, abychom byli všestrannými vývojáři, kteří jsou schopni zvládnout jakoukoli výzvu. Moderně vybavené laboratoře nám poskytují příležitost získat praktické zkušenosti a zajistit si tak připravenost na průmyslové požadavky po absolvování.
-
-                            Pedagogové na Stříbrníkách přinášejí vysokou úroveň soustředění a odhodlání, vedou nás k tomu, abychom přistupovali k programování s profesionalitou a efektivitou. Jejich mentoring podporuje kritické myšlení, týmovou spolupráci a zvládání složitých problémů, což nám poskytuje základy pro úspěch jak v individuálních, tak i týmových projektech.
-
-                            Stručně řečeno: Střední průmyslová škola Ústí nad Labem – Stříbrníky je místem, kde se formují budoucí lídři IT a tech průmyslu
-                        </p>
-                    </div>
+                    <ul class="nav nav-pills flex-column gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#info">Info</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projekty</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#social">Social</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </main>
-        <footer>
-           <div class="footer">
-                <p><p id="copyright">&copy;</p>&nbsp;2024 Matěj Brož. Všechna práva vyhrazena.</p>
-           </div>
-        </footer>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
+            <!-- Main Content -->
+            <div class="col-lg-8">
+                <!-- Info Section -->
+                <section id="info" class="mb-5 vh-100 d-flex align-items-center">
+                    <div class="brief-info">
+                        <h2 class="display-4 mb-4" style="color: var(--accent)">MATĚJ BROŽ</h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="lead">📌 Teplice, CZ</p>
+                                <p class="lead">🎓 SPSUL</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="lead">💻 Fullstack Developer</p>
+                                <p class="lead">📧 broz.matej@icloud.com</p>
+                            </div>
+                        </div>
+                        <hr class="my-4" style="border-color: var(--primary)">
+                        <p class="mb-0">Tohle je stránka s informacemi a odkazi pro více informací o mě si můžete dole
+                            stáhnout životopis</p>
+                    </div>
+                </section>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
-    </body>
+                <!-- Projects Section -->
+                <section id="projects" class="mb-5 vh-100 d-flex align-items-center w100">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card-project p-4 h-100">
+                                <h3>🔥 SPUNKBLOCK</h3>
+                                <p>Hra vytvořena podle mobilní hry Block Blast. Využíva funkci Drag&Drop.</p>
+                                <a href="https://spunkblock.vercel.app">Odkaz zde</a>
+                                <div class="mt-3">
+                                    <span class="badge bg-danger">Html</span>
+                                    <span class="badge bg-danger">JavaScript</span>
+                                    <span class="badge bg-danger">CSS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-project p-4 h-100">
+                                <h3>🚀 TransCity</h3>
+                                <p>Stránka pro firmu v Brně na pronájem a prodej vozidel.</p>
+                                <a href="https://www.transcity.cz">Odkaz zde</a>
+                                <div class="mt-3">
+                                    <span class="badge bg-danger">Html</span>
+                                    <span class="badge bg-danger">PHP</span>
+                                    <span class="badge bg-danger">SQL</span>
+                                    <span class="badge bg-danger">JavaScript</span>
+                                    <span class="badge bg-danger">Bootstrap</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Social Section -->
+                <section id="social" class="vh-100 d-flex align-items-center position-relative text-center">
+                    <div class="social-wrapper d-flex flex-column align-items-center justify-content-center">
+                        <h2 class="display-4 mb-4" style="color: var(--accent)">Social</h2>
+                        <div class="row g-4 mb-5">
+                            <div style="display: flex; flex-wrap:wrap; align-items: center; justify-content: center;"><a
+                                    href="https://www.facebook.com/matej.broz.79/" target="_blank"
+                                    rel="noopener noreferrer"
+                                    style="text-decoration:none;border:0;width:90px;height:90px;padding:2px;margin:5px;color:#ffffff;border-radius:50%;background-color:#282828;"><svg
+                                        class="niftybutton-facebook" style="display:block;fill:currentColor"
+                                        data-donate="true" data-tag="fac" data-name="Facebook" viewBox="0 0 512 512"
+                                        preserveAspectRatio="xMidYMid meet">
+                                        <title>Facebook social icon</title>
+                                        <path
+                                            d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z">
+                                        </path>
+                                    </svg></a><a href="https://www.instagram.com/matejbroz_/" target="_blank"
+                                    rel="noopener noreferrer"
+                                    style="text-decoration:none;border:0;width:90px;height:90px;padding:2px;margin:5px;color:#ffffff;border-radius:50%;background-color:#282828;"><svg
+                                        class="niftybutton-instagram" style="display:block;fill:currentColor"
+                                        data-donate="true" data-tag="ins" data-name="Instagram" viewBox="0 0 512 512"
+                                        preserveAspectRatio="xMidYMid meet">
+                                        <title>Instagram social icon</title>
+                                        <path
+                                            d="M256 109.3c47.8 0 53.4 0.2 72.3 1 17.4 0.8 26.9 3.7 33.2 6.2 8.4 3.2 14.3 7.1 20.6 13.4 6.3 6.3 10.1 12.2 13.4 20.6 2.5 6.3 5.4 15.8 6.2 33.2 0.9 18.9 1 24.5 1 72.3s-0.2 53.4-1 72.3c-0.8 17.4-3.7 26.9-6.2 33.2 -3.2 8.4-7.1 14.3-13.4 20.6 -6.3 6.3-12.2 10.1-20.6 13.4 -6.3 2.5-15.8 5.4-33.2 6.2 -18.9 0.9-24.5 1-72.3 1s-53.4-0.2-72.3-1c-17.4-0.8-26.9-3.7-33.2-6.2 -8.4-3.2-14.3-7.1-20.6-13.4 -6.3-6.3-10.1-12.2-13.4-20.6 -2.5-6.3-5.4-15.8-6.2-33.2 -0.9-18.9-1-24.5-1-72.3s0.2-53.4 1-72.3c0.8-17.4 3.7-26.9 6.2-33.2 3.2-8.4 7.1-14.3 13.4-20.6 6.3-6.3 12.2-10.1 20.6-13.4 6.3-2.5 15.8-5.4 33.2-6.2C202.6 109.5 208.2 109.3 256 109.3M256 77.1c-48.6 0-54.7 0.2-73.8 1.1 -19 0.9-32.1 3.9-43.4 8.3 -11.8 4.6-21.7 10.7-31.7 20.6 -9.9 9.9-16.1 19.9-20.6 31.7 -4.4 11.4-7.4 24.4-8.3 43.4 -0.9 19.1-1.1 25.2-1.1 73.8 0 48.6 0.2 54.7 1.1 73.8 0.9 19 3.9 32.1 8.3 43.4 4.6 11.8 10.7 21.7 20.6 31.7 9.9 9.9 19.9 16.1 31.7 20.6 11.4 4.4 24.4 7.4 43.4 8.3 19.1 0.9 25.2 1.1 73.8 1.1s54.7-0.2 73.8-1.1c19-0.9 32.1-3.9 43.4-8.3 11.8-4.6 21.7-10.7 31.7-20.6 9.9-9.9 16.1-19.9 20.6-31.7 4.4-11.4 7.4-24.4 8.3-43.4 0.9-19.1 1.1-25.2 1.1-73.8s-0.2-54.7-1.1-73.8c-0.9-19-3.9-32.1-8.3-43.4 -4.6-11.8-10.7-21.7-20.6-31.7 -9.9-9.9-19.9-16.1-31.7-20.6 -11.4-4.4-24.4-7.4-43.4-8.3C310.7 77.3 304.6 77.1 256 77.1L256 77.1z">
+                                        </path>
+                                        <path
+                                            d="M256 164.1c-50.7 0-91.9 41.1-91.9 91.9s41.1 91.9 91.9 91.9 91.9-41.1 91.9-91.9S306.7 164.1 256 164.1zM256 315.6c-32.9 0-59.6-26.7-59.6-59.6s26.7-59.6 59.6-59.6 59.6 26.7 59.6 59.6S288.9 315.6 256 315.6z">
+                                        </path>
+                                        <circle cx="351.5" cy="160.5" r="21.5"></circle>
+                                    </svg></a><a href="https://github.com/matejbroz07" target="_blank"
+                                    rel="noopener noreferrer"
+                                    style="text-decoration:none;border:0;width:90px;height:90px;padding:2px;margin:5px;color:#ffffff;border-radius:50%;background-color:#282828;"><svg
+                                        class="niftybutton-github" style="display:block;fill:currentColor"
+                                        data-donate="true" data-tag="git" data-name="Github" viewBox="0 0 512 512"
+                                        preserveAspectRatio="xMidYMid meet">
+                                        <title>Github social icon</title>
+                                        <path
+                                            d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
 </html>
